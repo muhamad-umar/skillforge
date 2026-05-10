@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Assignments · SkillForge</title>
+<meta name="description" content="SkillForge — AI-powered gamified learning platform. Level up your learning journey."/>
+<link rel="stylesheet" href="../shared/css/global.css"/>
+
+</head>
+<body class="learner">
+
+<div class="app">
+  
+<aside class="sidebar">
+  <div class="brand"><div class="logo">⚡</div><span>SkillForge</span></div>
+  <div class="group">Learner</div>
+  <nav class="nav"><a href="learner_dashboard.html" class=""><span>🏠</span><span>Dashboard</span></a>
+<a href="quests.html" class=""><span>⚔️</span><span>Quests</span></a>
+<a href="active_quest.html" class=""><span>🎯</span><span>Active Quest</span></a>
+<a href="leaderboard.html" class=""><span>🏆</span><span>Leaderboard</span></a>
+<a href="ai_assistant.html" class=""><span>🤖</span><span>AI Assistant</span></a>
+<a href="rewards.html" class=""><span>🎖️</span><span>Rewards</span></a>
+<a href="classes.html" class=""><span>🎓</span><span>Classes</span></a>
+<a href="assignment_submission.html" class="active"><span>📤</span><span>Assignments</span></a>
+<a href="profile.html" class=""><span>👤</span><span>Profile</span></a></nav>
+  <div class="group">Account</div>
+  <nav class="nav">
+    <a href="../auth/login.html" class="logout-link"><span>↩</span><span>Sign out</span></a>
+  </nav>
+</aside>
+
+  <div class="main">
+    
+<header class="topbar">
+  <button class="mobile-toggle" data-toggle-sidebar aria-label="Menu">☰</button>
+  <div class="search">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input placeholder="Search quests, classes, badges…"/>
+  </div>
+  <div class="actions">
+    <button class="icon-btn" aria-label="Notifications">🔔<span class="dot"></span></button>
+    <button class="icon-btn" aria-label="Messages">✉</button>
+    <div class="avatar" title="Alex">AL</div>
+  </div>
+</header>
+
+    <main class="content">
+<a href="classes.html" class="btn btn-ghost">← Back to classes</a>
+<section class="card">
+  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+    <div><h2 style="margin:0">Assignment 4 — Build a Todo App</h2><p class="muted" style="margin:4px 0 0">CS101 · Due Friday, 11:59 PM</p></div>
+    <div style="display:flex;gap:8px"><span class="badge badge-yellow">⏳ 2 days left</span><span class="badge badge-blue">+300 XP</span></div>
+  </div>
+</section>
+<section class="grid" style="grid-template-columns:1.4fr 1fr">
+  <div class="card">
+    <h3 class="card-title">Description</h3>
+    <p style="color:var(--c-text-2)">Build a small todo app with HTML/CSS/JS. It should support add, complete, and delete. Bonus: persist to localStorage.</p>
+    <h3 class="card-title" style="margin-top:18px">Submit your work</h3>
+    <div style="border:2px dashed var(--c-border);border-radius:14px;padding:30px;text-align:center;background:#F9FAFB">
+      <div style="font-size:2rem">📤</div>
+      <p style="margin:8px 0 4px"><b>Drop files here</b> or click to upload</p>
+      <p class="muted" style="margin:0;font-size:.85rem">PDF, ZIP, or link to repo · max 25MB</p>
+      <button class="btn btn-outline" style="margin-top:14px">Choose files</button>
+    </div>
+    <div style="margin-top:14px"><label class="label">Notes for instructor (optional)</label><textarea class="textarea" rows="3" placeholder="Anything you'd like to mention..."></textarea></div>
+    <button class="btn btn-primary" style="margin-top:14px">Submit Assignment</button>
+  </div>
+  <div class="card">
+    <h3 class="card-title">Status</h3>
+    <div style="display:flex;gap:10px;align-items:center"><div style="width:40px;height:40px;border-radius:50%;background:#FEF3C7;color:#92400E;display:grid;place-items:center;font-size:1.2rem">⏳</div><div><b>Not submitted yet</b><div class="muted" style="font-size:.78rem">Due in 2 days</div></div></div>
+    <h3 class="card-title" style="margin-top:18px">Rubric</h3>
+    <ul style="line-height:1.8;color:var(--c-text-2);padding-left:18px;margin:0;font-size:.9rem">
+      <li>Functionality (40%)</li><li>Code quality (30%)</li><li>UI/UX (20%)</li><li>Bonus (10%)</li>
+    </ul>
+  </div>
+</section>
+<a href="ai_assistant.html" class="fab" title="Open AI assistant">🤖</a>
+</main>
+  </div>
+  
+</div>
+
+<script src="../shared/js/global.js"></script>
+<script src="../shared/js/helpers.js"></script>
+
+
+</body>
+</html>

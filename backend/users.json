@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "role": "learner",
+    "name": "Umar",
+    "email": "umar@gmail.com",
+    "password": "password123",
+    "dashboardUrl": "../learner/learner_dashboard.html"
+  },
+  {
+    "id": 2,
+    "role": "learner",
+    "name": "Zainab",
+    "email": "zainab@gmail.com",
+    "password": "password123",
+    "dashboardUrl": "../learner/learner_dashboard.html"
+  },
+  {
+    "id": 3,
+    "role": "instructor",
+    "name": "Instructor",
+    "email": "instructor@gmail.com",
+    "password": "password123",
+    "dashboardUrl": "../instructor/instructor_dashboard.html"
+  },
+  {
+    "id": 4,
+    "role": "admin",
+    "name": "System Admin",
+    "email": "admin@skillforge.dev",
+    "password": "password123",
+    "dashboardUrl": "../admin/admin_dashboard.html"
+  }
+]

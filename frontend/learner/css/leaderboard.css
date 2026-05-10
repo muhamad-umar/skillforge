@@ -1,0 +1,61 @@
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 24px;
+    margin: 32px 0 48px;
+}
+
+.podium .p {
+    flex: 1;
+    max-width: 220px;
+    background: #fff;
+    border: 1px solid var(--c-border);
+    border-radius: 18px;
+    padding: 24px 20px;
+    text-align: center;
+    position: relative;
+    transition: .3s;
+}
+
+.podium .p:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+.podium .p .ava {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--grad-hero);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    margin: 0 auto 12px;
+}
+
+.podium .p.first {
+    padding: 40px 20px 28px;
+    background: linear-gradient(180deg, #FEF3C7, #FFFFFF);
+    border-color: #FBBF24;
+    box-shadow: var(--shadow-md);
+    z-index: 2;
+}
+
+.podium .p.first .ava {
+    background: var(--grad-yellow);
+    color: #7c2d12;
+    box-shadow: var(--shadow-glow);
+    width: 76px;
+    height: 76px;
+    font-size: 1.1rem;
+}
+
+.podium .crown {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+}

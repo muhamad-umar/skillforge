@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Quests · SkillForge</title>
+<meta name="description" content="SkillForge — AI-powered gamified learning platform. Level up your learning journey."/>
+<link rel="stylesheet" href="../shared/css/global.css"/>
+<link rel="stylesheet" href="../learner/css/quests.css"/>
+</head>
+<body class="admin">
+
+<div class="app">
+  
+<aside class="sidebar">
+  <div class="brand"><div class="logo">⚡</div><span>SkillForge</span></div>
+  <div class="group">Admin</div>
+  <nav class="nav"><a href="admin_dashboard.html" class=""><span>🏠</span><span>Overview</span></a>
+<a href="user_management.html" class=""><span>👥</span><span>Users</span></a>
+<a href="quest_management.html" class="active"><span>⚔️</span><span>Quests</span></a></nav>
+  <div class="group">Account</div>
+  <nav class="nav">
+    <a href="../auth/login.html" class="logout-link"><span>↩</span><span>Sign out</span></a>
+  </nav>
+</aside>
+
+  <div class="main">
+    
+<header class="topbar">
+  <button class="mobile-toggle" data-toggle-sidebar aria-label="Menu">☰</button>
+  <div class="search">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input placeholder="Search quests, classes, badges…"/>
+  </div>
+  <div class="actions">
+    <button class="icon-btn" aria-label="Notifications">🔔<span class="dot"></span></button>
+    <button class="icon-btn" aria-label="Messages">✉</button>
+    <div class="avatar" data-user-initials title="User">?</div>
+  </div>
+</header>
+
+    <main class="content">
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+  <div><h2 class="section-title">Quest Management</h2><p class="muted" style="margin:4px 0 0">Create, edit and review platform quests.</p></div>
+  <button class="btn btn-primary">+ New Quest</button>
+</div>
+<section class="grid grid-4">
+  <div class="card"><div class="stat"><div class="v" data-count="4562">0</div><div class="l">Total Quests</div></div></div>
+  <div class="card"><div class="stat"><div class="v" data-count="124">0</div><div class="l">Awaiting Review</div></div></div>
+  <div class="card"><div class="stat"><div class="v" data-count="89" data-suffix="%">0</div><div class="l">Avg Completion</div></div></div>
+  <div class="card"><div class="stat"><div class="v" data-count="312">0</div><div class="l">Authors</div></div></div>
+</section>
+<section class="card" style="padding:0">
+  <table class="t">
+    <thead><tr><th>Quest</th><th>Difficulty</th><th>Category</th><th>XP</th><th>Completions</th><th>Status</th><th></th></tr></thead>
+    <tbody>
+<tr><td><b>Master JS Promises</b></td><td><span class="badge badge-yellow">Intermediate</span></td><td>Coding</td><td>250</td><td>8,412</td><td><span class="badge badge-green">Live</span></td><td><button class="btn btn-outline">Edit</button></td></tr><tr><td><b>DP Algorithms</b></td><td><span class="badge badge-red">Advanced</span></td><td>Coding</td><td>400</td><td>3,120</td><td><span class="badge badge-green">Live</span></td><td><button class="btn btn-outline">Edit</button></td></tr><tr><td><b>UI Design 101</b></td><td><span class="badge badge-green">Beginner</span></td><td>Design</td><td>180</td><td>12,930</td><td><span class="badge badge-green">Live</span></td><td><button class="btn btn-outline">Edit</button></td></tr><tr><td><b>System Design Mastery</b></td><td><span class="badge badge-purple">Expert</span></td><td>Coding</td><td>800</td><td>420</td><td><span class="badge badge-green">Live</span></td><td><button class="btn btn-outline">Edit</button></td></tr><tr><td><b>Intro to ML</b></td><td><span class="badge badge-red">Advanced</span></td><td>AI</td><td>500</td><td>2,310</td><td><span class="badge badge-green">Live</span></td><td><button class="btn btn-outline">Edit</button></td></tr>
+    </tbody>
+  </table>
+</section>
+
+</main>
+  </div>
+  
+</div>
+
+<script src="../shared/js/global.js"></script>
+<script src="../shared/js/helpers.js"></script>
+
+
+</body>
+</html>

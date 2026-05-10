@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Create account · SkillForge</title>
+<meta name="description" content="SkillForge — AI-powered gamified learning platform. Level up your learning journey."/>
+<link rel="stylesheet" href="../shared/css/global.css"/>
+<link rel="stylesheet" href="css/auth.css"/>
+</head>
+<body class="auth">
+
+<a href="../landing/index.html" class="back-home">← Back to home</a>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <div class="brand"><div class="logo">⚡</div><span>SkillForge</span></div>
+    <h1>Create your account</h1>
+    <p class="sub">Earn your first 100 XP for signing up 🎉</p>
+    <form>
+      <div class="role-row">
+        <label><input type="radio" name="role" checked/><div class="pill">Learner</div></label>
+        <label><input type="radio" name="role"/><div class="pill">Instructor</div></label>
+        <label><input type="radio" name="role"/><div class="pill">Admin</div></label>
+      </div>
+      <div class="grid grid-2">
+        <div><label class="label">First name</label><input class="input" placeholder="Alex"/></div>
+        <div><label class="label">Last name</label><input class="input" placeholder="Doe"/></div>
+      </div>
+      <div><label class="label">Email</label><input class="input" type="email" placeholder="you@example.com" required/></div>
+      <div>
+        <label class="label">Password</label>
+        <input id="pw" class="input" type="password" placeholder="Create a strong password" required/>
+        <div class="pw-strength"><span></span></div>
+        <ul class="req-list" style="list-style:none;padding:6px 0 0;margin:0">
+          <li>• At least 8 characters</li><li>• One uppercase letter</li><li>• One number</li><li>• One symbol</li>
+        </ul>
+      </div>
+      <label style="display:flex;gap:8px;font-size:.85rem;color:var(--c-text-2)"><input type="checkbox" required/> I agree to the Terms & Privacy Policy</label>
+      <button class="btn btn-primary" style="justify-content:center">Create Account</button>
+      <div class="divider">or sign up with</div>
+      <div class="oauth"><button>🔵 Google</button><button> Apple</button></div>
+    </form>
+    <p class="foot">Already have an account? <a href="login.html">Sign in</a></p>
+  </div>
+</div>
+
+<script src="../shared/js/global.js"></script>
+<script src="../shared/js/helpers.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Dashboard · SkillForge</title>
+<meta name="description" content="SkillForge — AI-powered gamified learning platform. Level up your learning journey."/>
+<link rel="stylesheet" href="../shared/css/global.css"/>
+<link rel="stylesheet" href="css/learner_dashboard.css"/>
+</head>
+<body class="learner">
+
+<div class="app has-right">
+  
+<aside class="sidebar">
+  <div class="brand"><div class="logo">⚡</div><span>SkillForge</span></div>
+  <div class="group" data-user-name="{name}">Learner</div>
+  <nav class="nav"><a href="learner_dashboard.html" class="active"><span>🏠</span><span>Dashboard</span></a>
+<a href="quests.html" class=""><span>⚔️</span><span>Quests</span></a>
+<a href="active_quest.html" class=""><span>🎯</span><span>Active Quest</span></a>
+<a href="leaderboard.html" class=""><span>🏆</span><span>Leaderboard</span></a>
+<a href="ai_assistant.html" class=""><span>🤖</span><span>AI Assistant</span></a>
+<a href="rewards.html" class=""><span>🎖️</span><span>Rewards</span></a>
+<a href="classes.html" class=""><span>🎓</span><span>Classes</span></a>
+<a href="assignment_submission.html" class=""><span>📤</span><span>Assignments</span></a>
+<a href="profile.html" class=""><span>👤</span><span>Profile</span></a></nav>
+  <div class="group">Account</div>
+  <nav class="nav">
+    <a href="../auth/login.html" class="logout-link"><span>↩</span><span>Sign out</span></a>
+  </nav>
+</aside>
+
+  <div class="main">
+    
+<header class="topbar">
+  <button class="mobile-toggle" data-toggle-sidebar aria-label="Menu">☰</button>
+  <div class="search">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input placeholder="Search quests, classes, badges…"/>
+  </div>
+  <div class="actions">
+    <button class="icon-btn" aria-label="Notifications">🔔<span class="dot"></span></button>
+    <button class="icon-btn" aria-label="Messages">✉</button>
+    <div class="avatar" data-user-initials title="User">?</div>
+  </div>
+</header>
+
+    <main class="content">
+<section class="hero-card fade-in" style="display:flex; justify-content:space-between; align-items:flex-start; background: var(--grad-hero); padding: 32px 40px;">
+  <div style="flex:1;">
+    <h2 style="font-size: 1.8rem; margin-bottom: 8px; font-weight: 700;" data-user-name="Welcome back, {name}!">Welcome back!</h2>
+    <p style="font-size: 1.05rem; opacity: 0.95; margin-top: 0; margin-bottom: 32px;">Continue your quest to mastery.</p>
+    
+    <div style="background: rgba(255,255,255,0.15); padding: 16px; border-radius: 8px; max-width: 400px; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);">
+      <div style="display:flex; justify-content:space-between; font-size: 0.85rem; font-weight: 600; margin-bottom: 12px;">
+        <span>Level 12 Progress</span>
+        <span>8500 / 10000 XP</span>
+      </div>
+      <div class="progress" style="background: rgba(0,0,0,0.25); height: 8px; margin-bottom: 10px;"><span style="width:85%; background: #1e293b;"></span></div>
+      <div style="font-size: 0.8rem; opacity: 0.9;">1500 XP to Level 13</div>
+    </div>
+  </div>
+  <div style="display:flex; gap: 16px;">
+    <div style="background: rgba(255,255,255,0.2); padding: 20px 16px; border-radius: 12px; text-align: center; min-width: 100px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); backdrop-filter: blur(4px);">
+      <div style="font-size: 1.8rem; margin-bottom: 8px;">🔥</div>
+      <div style="font-size: 0.8rem; font-weight: 600; margin-bottom: 6px;">Daily Streak</div>
+      <div style="font-size: 1.8rem; font-weight: 800;">7</div>
+    </div>
+    <div style="background: rgba(255,255,255,0.2); padding: 20px 16px; border-radius: 12px; text-align: center; min-width: 100px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); backdrop-filter: blur(4px);">
+      <div style="font-size: 1.8rem; margin-bottom: 8px;">🏅</div>
+      <div style="font-size: 0.8rem; font-weight: 600; margin-bottom: 6px;">Badges</div>
+      <div style="font-size: 1.8rem; font-weight: 800;">15</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3 class="section-title" style="margin-bottom: 16px; font-size: 1.15rem; color: #374151;">Quick Access</h3>
+  <div class="quick" style="grid-template-columns: repeat(4, 1fr); gap: 20px;">
+  <a href="quests.html" class="qcard hover-lift" style="flex-direction: column; text-align: center; padding: 28px 20px; border-radius: 12px;">
+    <div class="ico" style="margin: 0 auto 16px; background: #2e4a8c; color: white; width: 56px; height: 56px; border-radius: 14px; font-size: 1.4rem;">⚡</div>
+    <div><div class="v" style="font-size: 1.05rem; color: #111827;">Active Quests</div><div class="l" style="margin-top:6px; color: #6b7280;">5 In Progress</div></div>
+  </a>
+  <a href="rewards.html" class="qcard hover-lift" style="flex-direction: column; text-align: center; padding: 28px 20px; border-radius: 12px;">
+    <div class="ico y" style="margin: 0 auto 16px; background: #fbbf24; color: white; width: 56px; height: 56px; border-radius: 14px; font-size: 1.4rem;">🏆</div>
+    <div><div class="v" style="font-size: 1.05rem; color: #111827;">Achievements</div><div class="l" style="margin-top:6px; color: #6b7280;">15 Unlocked</div></div>
+  </a>
+  <a href="leaderboard.html" class="qcard hover-lift" style="flex-direction: column; text-align: center; padding: 28px 20px; border-radius: 12px;">
+    <div class="ico" style="margin: 0 auto 16px; background: #60a5fa; color: white; width: 56px; height: 56px; border-radius: 14px; font-size: 1.4rem;">👥</div>
+    <div><div class="v" style="font-size: 1.05rem; color: #111827;">Leaderboard</div><div class="l" style="margin-top:6px; color: #6b7280;">Rank #8</div></div>
+  </a>
+  <a href="classes.html" class="qcard hover-lift" style="flex-direction: column; text-align: center; padding: 28px 20px; border-radius: 12px;">
+    <div class="ico p" style="margin: 0 auto 16px; background: #a855f7; color: white; width: 56px; height: 56px; border-radius: 14px; font-size: 1.4rem;">🎓</div>
+    <div><div class="v" style="font-size: 1.05rem; color: #111827;">My Classes</div><div class="l" style="margin-top:6px; color: #6b7280;">3 Enrolled</div></div>
+  </a>
+  </div>
+</section>
+
+<section>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+    <h3 class="section-title" style="font-size: 1.15rem; color: #374151;">Active Quests</h3>
+    <a href="quests.html" class="btn btn-ghost" style="color: #2e4a8c; font-weight: 600; font-size: 0.9rem;">Browse All →</a>
+  </div>
+  <div class="grid grid-3" style="gap: 20px;">
+    <article class="quest" style="position:relative; border-radius: 12px;">
+      <div class="banner" style="height: 150px; background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80') center/cover; display:block;">
+        <div style="position:absolute; top: 12px; left: 12px;"><span class="badge badge-yellow" style="font-size: 0.75rem; padding: 4px 8px;">Intermediate</span></div>
+        <div style="position:absolute; top: 12px; right: 12px;"><span class="badge badge-gray" style="background: rgba(255,255,255,0.95); font-size: 0.75rem; padding: 4px 8px; color: #374151;">75% Complete</span></div>
+      </div>
+      <div class="body" style="padding: 24px;">
+        <h4 style="font-size: 1.1rem; margin-bottom: 6px; color: #111827;">Master React Hooks</h4>
+        <div class="muted" style="margin-bottom: 20px; font-size: 0.85rem;">Web Development</div>
+        <div class="progress" style="margin-bottom: 16px; height: 8px; background: #e5e7eb;"><span style="width:75%; background: #111827;"></span></div>
+        <div style="display:flex; justify-content:space-between; font-size:0.8rem; color: #6b7280; margin-bottom: 24px; font-weight: 500;">
+          <span>🕒 2 days left</span>
+          <span style="color: #f59e0b;">⚡ 500 XP</span>
+        </div>
+        <a class="btn" style="width:100%; justify-content:center; background: #2e4a8c; color: white; border-radius: 6px; padding: 10px 0; font-weight: 600;" href="active_quest.html">▷ Continue Quest</a>
+      </div>
+    </article>
+    <article class="quest" style="position:relative; border-radius: 12px;">
+      <div class="banner" style="height: 150px; background: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=600&q=80') center/cover; display:block;">
+        <div style="position:absolute; top: 12px; left: 12px;"><span class="badge badge-red" style="background: #ef4444; color: white; font-size: 0.75rem; padding: 4px 8px;">Advanced</span></div>
+        <div style="position:absolute; top: 12px; right: 12px;"><span class="badge badge-gray" style="background: rgba(255,255,255,0.95); font-size: 0.75rem; padding: 4px 8px; color: #374151;">60% Complete</span></div>
+      </div>
+      <div class="body" style="padding: 24px;">
+        <h4 style="font-size: 1.1rem; margin-bottom: 6px; color: #111827;">Data Structures Challenge</h4>
+        <div class="muted" style="margin-bottom: 20px; font-size: 0.85rem;">Computer Science</div>
+        <div class="progress" style="margin-bottom: 16px; height: 8px; background: #e5e7eb;"><span style="width:60%; background: #4b5563;"></span></div>
+        <div style="display:flex; justify-content:space-between; font-size:0.8rem; color: #6b7280; margin-bottom: 24px; font-weight: 500;">
+          <span>🕒 5 days left</span>
+          <span style="color: #f59e0b;">⚡ 750 XP</span>
+        </div>
+        <a class="btn" style="width:100%; justify-content:center; background: #2e4a8c; color: white; border-radius: 6px; padding: 10px 0; font-weight: 600;" href="active_quest.html">▷ Continue Quest</a>
+      </div>
+    </article>
+    <article class="quest" style="position:relative; border-radius: 12px;">
+      <div class="banner" style="height: 150px; background: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80') center/cover; display:block;">
+        <div style="position:absolute; top: 12px; left: 12px;"><span class="badge badge-green" style="font-size: 0.75rem; padding: 4px 8px;">Beginner</span></div>
+        <div style="position:absolute; top: 12px; right: 12px;"><span class="badge badge-gray" style="background: rgba(255,255,255,0.95); font-size: 0.75rem; padding: 4px 8px; color: #374151;">40% Complete</span></div>
+      </div>
+      <div class="body" style="padding: 24px;">
+        <h4 style="font-size: 1.1rem; margin-bottom: 6px; color: #111827;">UI/UX Design Basics</h4>
+        <div class="muted" style="margin-bottom: 20px; font-size: 0.85rem;">Design</div>
+        <div class="progress" style="margin-bottom: 16px; height: 8px; background: #e5e7eb;"><span style="width:40%; background: #111827;"></span></div>
+        <div style="display:flex; justify-content:space-between; font-size:0.8rem; color: #6b7280; margin-bottom: 24px; font-weight: 500;">
+          <span>🕒 1 week left</span>
+          <span style="color: #f59e0b;">⚡ 300 XP</span>
+        </div>
+        <a class="btn" style="width:100%; justify-content:center; background: #2e4a8c; color: white; border-radius: 6px; padding: 10px 0; font-weight: 600;" href="active_quest.html">▷ Continue Quest</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="grid" style="grid-template-columns:1.4fr 1fr;">
+  <div class="card" style="padding: 24px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <h3 class="card-title" style="font-size: 1.05rem; color: #111827; font-weight: 600; margin-bottom: 20px;">XP earned this week</h3>
+    <div class="chart">
+      <svg viewBox="0 0 400 160" preserveAspectRatio="none">
+        <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#60A5FA" stop-opacity=".55"/><stop offset="100%" stop-color="#60A5FA" stop-opacity="0"/></linearGradient></defs>
+        <path d="M0,130 C50,90 90,110 130,80 C170,55 210,95 250,60 C290,30 330,55 400,40 L400,160 L0,160 Z" fill="url(#g1)"/>
+        <path d="M0,130 C50,90 90,110 130,80 C170,55 210,95 250,60 C290,30 330,55 400,40" fill="none" stroke="#2e4a8c" stroke-width="2.5"/>
+      </svg>
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:.78rem;color:#6b7280;margin-top:12px;font-weight: 500;"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+  </div>
+  <div class="card skill" style="padding: 24px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <h3 class="card-title" style="font-size: 1.05rem; color: #111827; font-weight: 600; margin-bottom: 20px;">Skill Progress</h3>
+    <div class="row" style="display: flex; justify-content: space-between; margin-top: 14px; margin-bottom: 8px; font-weight: 500; color: #111827; font-size: 0.85rem;"><span>JavaScript</span><span class="muted" style="color: #6b7280;">82%</span></div><div class="progress" style="height: 6px; background: #f3f4f6;"><span style="width:82%; background: #2e4a8c;"></span></div>
+    <div class="row" style="display: flex; justify-content: space-between; margin-top: 20px; margin-bottom: 8px; font-weight: 500; color: #111827; font-size: 0.85rem;"><span>Algorithms</span><span class="muted" style="color: #6b7280;">54%</span></div><div class="progress" style="height: 6px; background: #f3f4f6;"><span style="width:54%; background: #2e4a8c;"></span></div>
+    <div class="row" style="display: flex; justify-content: space-between; margin-top: 20px; margin-bottom: 8px; font-weight: 500; color: #111827; font-size: 0.85rem;"><span>UI / UX</span><span class="muted" style="color: #6b7280;">68%</span></div><div class="progress yellow" style="height: 6px; background: #f3f4f6;"><span style="width:68%; background: #fbbf24;"></span></div>
+    <div class="row" style="display: flex; justify-content: space-between; margin-top: 20px; margin-bottom: 8px; font-weight: 500; color: #111827; font-size: 0.85rem;"><span>Data Science</span><span class="muted" style="color: #6b7280;">31%</span></div><div class="progress" style="height: 6px; background: #f3f4f6;"><span style="width:31%; background: #2e4a8c;"></span></div>
+  </div>
+</section>
+
+<section class="grid" style="grid-template-columns:1.2fr 1fr;">
+  <div class="card" style="padding: 24px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h3 class="card-title" style="margin:0; font-size: 1.05rem; color: #111827; font-weight: 600;">Leaderboard</h3><a href="leaderboard.html" class="btn btn-ghost" style="color: #2e4a8c; font-weight: 600; font-size: 0.85rem; padding: 4px 8px;">View all →</a></div>
+    <div class="lb-row" style="margin-bottom: 8px; padding: 8px; border-radius: 8px;"><div class="lb-rank gold" style="width: 32px; height: 32px;">1</div><div class="ava" style="width: 36px; height: 36px;">SK</div><div class="name" style="font-size: 0.9rem;">Sara K. 👑</div><div class="xp" style="font-size: 0.9rem; color: #2e4a8c;">12,480 XP</div></div>
+    <div class="lb-row" style="margin-bottom: 8px; padding: 8px; border-radius: 8px;"><div class="lb-rank silver" style="width: 32px; height: 32px;">2</div><div class="ava" style="width: 36px; height: 36px;">RM</div><div class="name" style="font-size: 0.9rem;">Rahul M.</div><div class="xp" style="font-size: 0.9rem; color: #2e4a8c;">11,210 XP</div></div>
+    <div class="lb-row" style="margin-bottom: 8px; padding: 8px; border-radius: 8px;"><div class="lb-rank bronze" style="width: 32px; height: 32px;">3</div><div class="ava" style="width: 36px; height: 36px;">JL</div><div class="name" style="font-size: 0.9rem;">Jenny L.</div><div class="xp" style="font-size: 0.9rem; color: #2e4a8c;">10,890 XP</div></div>
+    <div class="lb-row" style="background:#f9fafb; padding: 8px; border-radius: 8px;"><div class="lb-rank" style="background:#DBEAFE; color:#1E3A8A; width: 32px; height: 32px;">42</div><div class="ava" style="width: 36px; height: 36px;">AL</div><div class="name" style="font-size: 0.9rem;">You</div><div class="xp" style="font-size: 0.9rem; color: #2e4a8c;">3,240 XP</div></div>
+  </div>
+  <div class="card" style="padding: 24px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <h3 class="card-title" style="font-size: 1.05rem; color: #111827; font-weight: 600; margin-bottom: 20px;">🔥 Daily Streak</h3>
+    <div class="streak">
+      <div class="day on" style="background: #fbbf24; color: #7c2d12;">M</div><div class="day on" style="background: #fbbf24; color: #7c2d12;">T</div><div class="day on" style="background: #fbbf24; color: #7c2d12;">W</div><div class="day on" style="background: #fbbf24; color: #7c2d12;">T</div><div class="day on" style="background: #fbbf24; color: #7c2d12;">F</div><div class="day on" style="background: #fbbf24; color: #7c2d12;">S</div><div class="day today" style="background: #2e4a8c; color: white;">S</div>
+    </div>
+    <p class="muted" style="margin-top:20px; font-size: 0.85rem; color: #6b7280; line-height: 1.6;">You're on a 7-day streak — keep it going to unlock the <b style="color: #111827;">Streak Hero</b> badge!</p>
+  </div>
+</section>
+<a href="ai_assistant.html" class="fab" title="Open AI assistant">🤖</a>
+</main>
+  </div>
+  
+<aside class="right-panel" style="padding: 24px; background: #fff; border-left: 1px solid #f3f4f6;">
+  <div class="card" style="padding: 28px 24px; text-align: center; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <h4 style="margin: 0 0 24px 0; font-size: 1.05rem; text-align: left; color: #111827; font-weight: 600;">Player Stats</h4>
+    <div style="width: 86px; height: 86px; border-radius: 50%; margin: 0 auto 16px; background: var(--grad-hero); display:grid; place-items:center; font-size: 1.6rem; font-weight: 800; color: #fff; box-shadow: 0 4px 16px rgba(30,58,138,0.3);" data-user-initials>?</div>
+    <div style="font-weight: 700; font-size: 1.15rem; color: #111827;" data-user-name="{name}">—</div>
+    <div style="color: #6b7280; font-size: 0.85rem; margin-top: 6px;">Level 12 Warrior</div>
+    <div style="color: #f59e0b; font-size: 0.95rem; font-weight: 600; margin-top: 10px;">⭐ 2450 Coins</div>
+    
+    <hr style="border: 0; border-top: 1px solid #f3f4f6; margin: 24px 0;">
+    
+    <div style="display:flex; justify-content:space-between; margin-bottom: 14px; font-size: 0.85rem;">
+      <span style="color: #6b7280;">Total XP</span>
+      <span style="font-weight: 600; color: #111827;">8,500</span>
+    </div>
+    <div style="display:flex; justify-content:space-between; margin-bottom: 14px; font-size: 0.85rem;">
+      <span style="color: #6b7280;">Quests Completed</span>
+      <span style="font-weight: 600; color: #111827;">47</span>
+    </div>
+    <div style="display:flex; justify-content:space-between; font-size: 0.85rem;">
+      <span style="color: #6b7280;">Success Rate</span>
+      <span style="font-weight: 600; color: #10b981;">94%</span>
+    </div>
+  </div>
+
+  <div class="card" style="padding: 24px; border-radius: 12px; margin-top: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <h4 style="margin: 0 0 24px 0; font-size: 1.05rem; color: #111827; font-weight: 600;">Daily Challenges</h4>
+    
+    <div style="margin-bottom: 24px;">
+      <div style="display:flex; justify-content:space-between; font-size: 0.85rem; font-weight: 600; margin-bottom: 10px;">
+        <span style="color: #111827;">Complete 3 Quests</span>
+        <span style="color: #f59e0b;">⚡ 100</span>
+      </div>
+      <div style="display:flex; align-items:center; gap: 12px;">
+        <div class="progress" style="flex:1; height: 6px; background: #f3f4f6;"><span style="width:66%; background: #111827;"></span></div>
+        <span style="font-size: 0.75rem; color: #6b7280; min-width: 24px; text-align: right;">2/3</span>
+      </div>
+    </div>
+    
+    <div style="margin-bottom: 24px;">
+      <div style="display:flex; justify-content:space-between; font-size: 0.85rem; font-weight: 600; margin-bottom: 10px;">
+        <span style="color: #111827;">Earn 500 XP</span>
+        <span style="color: #f59e0b;">⚡ 50</span>
+      </div>
+      <div style="display:flex; align-items:center; gap: 12px;">
+        <div class="progress" style="flex:1; height: 6px; background: #f3f4f6;"><span style="width:70%; background: #111827;"></span></div>
+        <span style="font-size: 0.75rem; color: #6b7280; min-width: 38px; text-align: right;">350/500</span>
+      </div>
+    </div>
+    
+    <div>
+      <div style="display:flex; justify-content:space-between; font-size: 0.85rem; font-weight: 600; margin-bottom: 10px;">
+        <span style="color: #111827;">Help a Teammate</span>
+        <span style="color: #f59e0b;">⚡ 75</span>
+      </div>
+      <div style="display:flex; align-items:center; gap: 12px;">
+        <div class="progress" style="flex:1; height: 6px; background: #f3f4f6;"><span style="width:0%; background: #111827;"></span></div>
+        <span style="font-size: 0.75rem; color: #6b7280; min-width: 24px; text-align: right;">0/1</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="padding: 24px; border-radius: 12px; margin-top: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+    <h4 style="margin: 0 0 20px 0; font-size: 1.05rem; color: #111827; font-weight: 600;">Team Quests</h4>
+    <div style="display:flex; align-items:center; gap: 14px; padding: 14px; border: 1px solid #f3f4f6; border-radius: 10px; margin-bottom: 12px;">
+      <span style="font-size: 1.2rem; color: #6b7280;">👥</span>
+      <span style="font-size: 0.85rem; font-weight: 600; color: #111827;">React Warriors (4/5)</span>
+    </div>
+    <div style="display:flex; align-items:center; gap: 14px; padding: 14px; border: 1px solid #f3f4f6; border-radius: 10px; margin-bottom: 16px;">
+      <span style="font-size: 1.2rem; color: #6b7280;">👥</span>
+      <span style="font-size: 0.85rem; font-weight: 600; color: #111827;">Algorithm Masters (3/5)</span>
+    </div>
+    <div style="text-align: center; margin-top: 8px;">
+      <a href="#" style="color: #2e4a8c; font-weight: 600; font-size: 0.85rem;">Join Team Quest</a>
+    </div>
+  </div>
+</aside>
+
+</div>
+
+<script src="../shared/js/global.js"></script>
+<script src="../shared/js/helpers.js"></script>
+<script src="js/learner_dashboard.js"></script>
+
+</body>
+</html>

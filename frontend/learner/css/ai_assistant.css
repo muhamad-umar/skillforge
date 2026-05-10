@@ -1,0 +1,22 @@
+.chat-wrap{display:grid;grid-template-columns:260px 1fr;gap:18px;height:calc(100vh - 160px)}
+.chat-side{background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-lg);padding:16px;overflow-y:auto}
+.chat-side h4{margin:0 0 10px;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--c-text-3)}
+.chat-side .item{padding:10px;border-radius:10px;cursor:pointer;font-size:.88rem;color:var(--c-text-2);transition:.2s}
+.chat-side .item:hover,.chat-side .item.active{background:#EFF6FF;color:var(--c-primary)}
+.chat{background:#fff;border:1px solid var(--c-border);border-radius:var(--radius-lg);display:flex;flex-direction:column;overflow:hidden;position:relative}
+.chat .head{padding:14px 18px;border-bottom:1px solid var(--c-border);display:flex;align-items:center;gap:10px;background:linear-gradient(90deg,#EFF6FF,#fff)}
+.chat .head .ai-orb{width:38px;height:38px;border-radius:12px;background:var(--grad-hero);display:grid;place-items:center;color:#fff;animation:pulseGlow 2.4s ease-in-out infinite}
+.chat .body{flex:1;padding:22px;overflow-y:auto;display:flex;flex-direction:column;gap:12px;background:linear-gradient(180deg,#F9FAFB,#fff)}
+.bubble{max-width:78%;padding:12px 16px;border-radius:18px;font-size:.92rem;line-height:1.5;animation:scaleIn .25s ease}
+.bubble.ai{background:#fff;border:1px solid var(--c-border);border-top-left-radius:6px}
+.bubble.me{background:var(--grad-hero);color:#fff;align-self:flex-end;border-top-right-radius:6px}
+.suggested{display:flex;gap:8px;flex-wrap:wrap;padding:0 18px 12px}
+.suggested .s{padding:8px 14px;border:1px solid var(--c-border);border-radius:99px;font-size:.84rem;background:#fff;color:var(--c-text-2);cursor:pointer;transition:.2s}
+.suggested .s:hover{border-color:var(--c-sky);color:var(--c-primary)}
+.composer{padding:14px 18px;border-top:1px solid var(--c-border);display:flex;gap:10px;background:#fff}
+.composer input{flex:1;padding:12px 14px;border:1px solid var(--c-border);border-radius:14px;outline:none}
+.composer input:focus{border-color:var(--c-sky);box-shadow:0 0 0 4px rgba(96,165,250,.15)}
+.typing{display:inline-flex;gap:6px;padding:10px 14px}
+.typing span{width:8px;height:8px;border-radius:50%;background:#60A5FA;animation:typing 1.2s infinite}
+.typing span:nth-child(2){animation-delay:.15s}.typing span:nth-child(3){animation-delay:.3s}
+@media(max-width:900px){.chat-wrap{grid-template-columns:1fr}.chat-side{display:none}}

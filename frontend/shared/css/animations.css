@@ -1,0 +1,20 @@
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes scaleIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes pulseGlow{0%,100%{box-shadow:0 0 25px rgba(96,165,250,.45)}50%{box-shadow:0 0 45px rgba(96,165,250,.7)}}
+@keyframes shimmer{0%{background-position:-400px 0}100%{background-position:400px 0}}
+@keyframes spinSlow{to{transform:rotate(360deg)}}
+@keyframes typing{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-6px)}}
+@keyframes slideInRight{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes pop{0%{transform:scale(.7);opacity:0}60%{transform:scale(1.1)}100%{transform:scale(1);opacity:1}}
+
+.fade-in{animation:fadeIn .5s ease both}
+.scale-in{animation:scaleIn .3s ease both}
+.float{animation:float 4s ease-in-out infinite}
+.pulse-glow{animation:pulseGlow 2.4s ease-in-out infinite}
+.slide-in{animation:slideInRight .5s ease both}
+.pop{animation:pop .5s ease both}
+.delay-1{animation-delay:.1s}.delay-2{animation-delay:.2s}.delay-3{animation-delay:.3s}.delay-4{animation-delay:.4s}.delay-5{animation-delay:.5s}
+
+.hover-lift{transition:.25s}.hover-lift:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(15,23,42,.12)}
+.hover-scale{transition:.2s}.hover-scale:hover{transform:scale(1.04)}

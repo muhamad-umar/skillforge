@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Rewards · SkillForge</title>
+<meta name="description" content="SkillForge — AI-powered gamified learning platform. Level up your learning journey."/>
+<link rel="stylesheet" href="../shared/css/global.css"/>
+<link rel="stylesheet" href="css/rewards.css"/><link rel="stylesheet" href="css/quests.css"/>
+</head>
+<body class="learner">
+
+<div class="app">
+  
+<aside class="sidebar">
+  <div class="brand"><div class="logo">⚡</div><span>SkillForge</span></div>
+  <div class="group">Learner</div>
+  <nav class="nav"><a href="learner_dashboard.html" class=""><span>🏠</span><span>Dashboard</span></a>
+<a href="quests.html" class=""><span>⚔️</span><span>Quests</span></a>
+<a href="active_quest.html" class=""><span>🎯</span><span>Active Quest</span></a>
+<a href="leaderboard.html" class=""><span>🏆</span><span>Leaderboard</span></a>
+<a href="ai_assistant.html" class=""><span>🤖</span><span>AI Assistant</span></a>
+<a href="rewards.html" class="active"><span>🎖️</span><span>Rewards</span></a>
+<a href="classes.html" class=""><span>🎓</span><span>Classes</span></a>
+<a href="assignment_submission.html" class=""><span>📤</span><span>Assignments</span></a>
+<a href="profile.html" class=""><span>👤</span><span>Profile</span></a></nav>
+  <div class="group">Account</div>
+  <nav class="nav">
+    <a href="../auth/login.html" class="logout-link"><span>↩</span><span>Sign out</span></a>
+  </nav>
+</aside>
+
+  <div class="main">
+    
+<header class="topbar">
+  <button class="mobile-toggle" data-toggle-sidebar aria-label="Menu">☰</button>
+  <div class="search">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input placeholder="Search quests, classes, badges…"/>
+  </div>
+  <div class="actions">
+    <button class="icon-btn" aria-label="Notifications">🔔<span class="dot"></span></button>
+    <button class="icon-btn" aria-label="Messages">✉</button>
+    <div class="avatar" title="Alex">AL</div>
+  </div>
+</header>
+
+    <main class="content">
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+  <div><h2 class="section-title">🎖️ Rewards & Achievements</h2><p class="muted" style="margin:4px 0 0">24 of 80 badges unlocked · 30%</p></div>
+  <div class="filters"><button class="chip active">All</button><button class="chip">Common</button><button class="chip">Rare</button><button class="chip">Epic</button><button class="chip">Legendary</button></div>
+</div>
+<div class="grid grid-4">
+  <div class="card"><div class="stat"><div class="v">24</div><div class="l">Badges Earned</div></div></div>
+  <div class="card"><div class="stat"><div class="v">3,240</div><div class="l">Total XP</div></div></div>
+  <div class="card"><div class="stat"><div class="v">7</div><div class="l">Day Streak 🔥</div></div></div>
+  <div class="card"><div class="stat"><div class="v">Lvl 12</div><div class="l">Apprentice</div></div></div>
+</div>
+<div class="badges">
+<div class="b-card"><div class="b-ico epic">🔥</div><b>Streak Hero</b><div class="muted" style="font-size:.78rem">7-day streak</div><div class="rar" style="color:#7C3AED">Epic</div></div><div class="b-card"><div class="b-ico rare">⭐</div><b>Quick Learner</b><div class="muted" style="font-size:.78rem">First 10 quests</div><div class="rar" style="color:#1E3A8A">Rare</div></div><div class="b-card"><div class="b-ico legendary">🏆</div><b>Top 50</b><div class="muted" style="font-size:.78rem">Reached top 50</div><div class="rar" style="color:#F59E0B">Legendary</div></div><div class="b-card"><div class="b-ico common">🎯</div><b>Sharpshooter</b><div class="muted" style="font-size:.78rem">100% on a quiz</div><div class="rar" style="color:#9CA3AF">Common</div></div><div class="b-card"><div class="b-ico rare">📘</div><b>Bookworm</b><div class="muted" style="font-size:.78rem">Read 5 articles</div><div class="rar" style="color:#1E3A8A">Rare</div></div><div class="b-card"><div class="b-ico epic">⚡</div><b>Speedrunner</b><div class="muted" style="font-size:.78rem">Quest in <10 min</div><div class="rar" style="color:#7C3AED">Epic</div></div><div class="b-card locked"><div class="b-ico legendary">💎</div><b>Diamond Mind</b><div class="muted" style="font-size:.78rem">30-day streak</div><div class="rar" style="color:#F59E0B">Legendary</div></div><div class="b-card locked"><div class="b-ico legendary">🧙</div><b>Code Wizard</b><div class="muted" style="font-size:.78rem">100 quests done</div><div class="rar" style="color:#F59E0B">Legendary</div></div></div><a href="ai_assistant.html" class="fab" title="Open AI assistant">🤖</a>
+</main>
+  </div>
+  
+</div>
+
+<script src="../shared/js/global.js"></script>
+<script src="../shared/js/helpers.js"></script>
+<script src="js/rewards.js"></script>
+
+</body>
+</html>

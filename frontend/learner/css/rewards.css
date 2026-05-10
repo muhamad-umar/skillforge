@@ -1,0 +1,14 @@
+.badges { display:grid; grid-template-columns:repeat(4,1fr); gap:18px }
+.b-card { text-align:center; transition:.3s; position:relative }
+.b-card:hover { transform:translateY(-4px) }
+.b-card .b-ico { width:64px; height:64px; border-radius:18px; display:grid; place-items:center; font-size:1.6rem; color:#fff; margin:0 auto 6px; box-shadow:var(--shadow-md) }
+.b-ico.common { background:var(--grad-hero) }
+.b-ico.rare { background:var(--grad-hero) }
+.b-ico.epic { background:var(--grad-yellow) }
+.b-ico.legendary { background:var(--grad-yellow); animation:pulseGlow 2.4s ease-in-out infinite }
+.b-card.locked { opacity:.5; filter:grayscale(.6) }
+.b-card b { font-size:.85rem }
+.b-card .muted { font-size:.72rem !important }
+.b-card .rar { display:none; }
+@media(max-width:1100px) { .badges{grid-template-columns:repeat(3,1fr)} }
+@media(max-width:700px) { .badges{grid-template-columns:repeat(2,1fr)} }

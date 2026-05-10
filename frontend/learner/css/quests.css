@@ -1,0 +1,4 @@
+.filters{display:flex;gap:10px;flex-wrap:wrap}
+.chip{padding:8px 14px;border-radius:99px;background:#fff;border:1px solid var(--c-border);font-size:.85rem;font-weight:600;color:var(--c-text-2);cursor:pointer;transition:.2s}
+.chip:hover{border-color:var(--c-sky)}
+.chip.active{background:var(--grad-hero);color:#fff;border-color:transparent}

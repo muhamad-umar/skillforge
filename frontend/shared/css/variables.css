@@ -1,0 +1,27 @@
+:root{
+  --c-primary:#1E3A8A;
+  --c-primary-2:#2748a8;
+  --c-sky:#60A5FA;
+  --c-yellow:#FBBF24;
+  --c-bg:#F9FAFB;
+  --c-card:#FFFFFF;
+  --c-text:#111827;
+  --c-text-2:#4B5563;
+  --c-text-3:#6B7280;
+  --c-border:#E5E7EB;
+  --c-success:#22C55E;
+  --c-error:#EF4444;
+  --c-info:#DBEAFE;
+  --grad-hero:linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+  --grad-yellow:linear-gradient(135deg,#FBBF24 0%,#F59E0B 100%);
+  --grad-card:linear-gradient(135deg,#EFF6FF 0%,#FFFFFF 100%);
+  --shadow-sm:0 1px 2px rgba(15,23,42,.06);
+  --shadow-md:0 6px 18px rgba(15,23,42,.08);
+  --shadow-lg:0 20px 45px rgba(15,23,42,.12);
+  --shadow-glow:0 0 30px rgba(96,165,250,.45);
+  --radius-sm:.5rem;
+  --radius:.875rem;
+  --radius-lg:1.25rem;
+  --radius-xl:1.75rem;
+  --font:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}

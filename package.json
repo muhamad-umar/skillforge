@@ -1,0 +1,16 @@
+{
+  "name": "skillforge",
+  "version": "1.0.0",
+  "description": "SkillForge \u2014 AI-powered gamified learning platform (static frontend).",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "edtech",
+    "gamified",
+    "learning",
+    "skillforge"
+  ],
+  "license": "MIT"
+}

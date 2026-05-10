@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Active Quest · SkillForge</title>
+<meta name="description" content="SkillForge — AI-powered gamified learning platform. Level up your learning journey."/>
+<link rel="stylesheet" href="../shared/css/global.css"/>
+
+</head>
+<body class="learner">
+
+<div class="app">
+  
+<aside class="sidebar">
+  <div class="brand"><div class="logo">⚡</div><span>SkillForge</span></div>
+  <div class="group">Learner</div>
+  <nav class="nav"><a href="learner_dashboard.html" class=""><span>🏠</span><span>Dashboard</span></a>
+<a href="quests.html" class=""><span>⚔️</span><span>Quests</span></a>
+<a href="active_quest.html" class="active"><span>🎯</span><span>Active Quest</span></a>
+<a href="leaderboard.html" class=""><span>🏆</span><span>Leaderboard</span></a>
+<a href="ai_assistant.html" class=""><span>🤖</span><span>AI Assistant</span></a>
+<a href="rewards.html" class=""><span>🎖️</span><span>Rewards</span></a>
+<a href="classes.html" class=""><span>🎓</span><span>Classes</span></a>
+<a href="assignment_submission.html" class=""><span>📤</span><span>Assignments</span></a>
+<a href="profile.html" class=""><span>👤</span><span>Profile</span></a></nav>
+  <div class="group">Account</div>
+  <nav class="nav">
+    <a href="../auth/login.html" class="logout-link"><span>↩</span><span>Sign out</span></a>
+  </nav>
+</aside>
+
+  <div class="main">
+    
+<header class="topbar">
+  <button class="mobile-toggle" data-toggle-sidebar aria-label="Menu">☰</button>
+  <div class="search">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input placeholder="Search quests, classes, badges…"/>
+  </div>
+  <div class="actions">
+    <button class="icon-btn" aria-label="Notifications">🔔<span class="dot"></span></button>
+    <button class="icon-btn" aria-label="Messages">✉</button>
+    <div class="avatar" title="Alex">AL</div>
+  </div>
+</header>
+
+    <main class="content">
+<a href="quests.html" class="btn btn-ghost">← Back to quests</a>
+<section class="card" style="padding:0; overflow:hidden; border-radius: 12px; border: none; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
+  <div style="height:200px; background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80') center/cover; position:relative; display:block;">
+    <div style="position:absolute; top: 20px; left: 20px;"><span class="badge badge-yellow" style="font-size: 0.85rem; padding: 6px 12px; font-weight: 700; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Intermediate</span></div>
+  </div>
+  <div style="padding: 26px 32px; background: #fff;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px">
+      <div>
+        <h2 style="margin:0; font-size: 1.6rem; font-weight: 800; color: #111827;">Master JavaScript Promises</h2>
+        <p class="muted" style="margin:6px 0 0; font-size: 0.95rem;">Task 3 of 4 · Code challenge: Chain it!</p>
+      </div>
+      <div style="text-align:right">
+        <div class="muted" style="font-size:.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Quest progress</div>
+        <div style="font-weight:800;font-size:1.8rem;color:#2e4a8c; line-height: 1.2;">60%</div>
+      </div>
+    </div>
+    <div class="progress" style="margin-top:20px; height: 10px; background: #e5e7eb;"><span style="width:60%; background: #2e4a8c;"></span></div>
+  </div>
+</section>
+<section class="grid" style="grid-template-columns:2fr 1fr">
+  <div class="card">
+    <h3 class="card-title">Code challenge: Chain it!</h3>
+    <p style="color:var(--c-text-2)">Given a function <code>fetchUser()</code> that returns a promise, chain three calls and handle errors gracefully.</p>
+    <pre style="background:#0B1220;color:#E5E7EB;padding:18px;border-radius:14px;overflow:auto;font-size:.86rem;line-height:1.6"><code>function fetchUser() {
+  return fetch('/api/user')
+    .then(r => r.json());
+}
+
+// Your code here:
+fetchUser()
+  .then(/* ... */)
+  .catch(/* ... */);</code></pre>
+    <div style="display:flex;gap:12px;margin-top:20px">
+      <button class="btn btn-primary" style="background: #2e4a8c; font-size: 1rem; padding: 12px 24px;">Run & Submit</button>
+      <button class="btn btn-outline" style="font-size: 1rem; padding: 12px 24px; color: #2e4a8c; border-color: #2e4a8c;">Hint</button>
+    </div>
+  </div>
+  <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+    <div>
+      <h3 class="card-title" style="margin-bottom: 20px;">Quest Tasks</h3>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="display:flex;gap:12px;padding:12px 14px;border-radius:10px;background:transparent;align-items:center;">
+          <div style="width:24px;height:24px;border-radius:50%;background:#22C55E;color:#fff;display:grid;place-items:center;font-size:.75rem">✓</div>
+          <div style="flex:1;font-size:.95rem;color:#374151;">Read: What is a Promise?</div>
+        </div>
+        <div style="display:flex;gap:12px;padding:12px 14px;border-radius:10px;background:transparent;align-items:center;">
+          <div style="width:24px;height:24px;border-radius:50%;background:#22C55E;color:#fff;display:grid;place-items:center;font-size:.75rem">✓</div>
+          <div style="flex:1;font-size:.95rem;color:#374151;">Quiz: Promise states</div>
+        </div>
+        <div style="display:flex;gap:12px;padding:12px 14px;border-radius:10px;background:#EFF6FF;align-items:center;border:1px solid #bfdbfe;">
+          <div style="width:24px;height:24px;border-radius:50%;background:#FBBF24;color:#fff;display:grid;place-items:center;font-size:.75rem">•</div>
+          <div style="flex:1;font-size:.95rem;color:#1e3a8a;font-weight:600;">Code challenge: Chain it!</div>
+        </div>
+        <div style="display:flex;gap:12px;padding:12px 14px;border-radius:10px;background:transparent;align-items:center;">
+          <div style="width:24px;height:24px;border-radius:50%;background:#E5E7EB;color:#fff;display:grid;place-items:center;font-size:.75rem">•</div>
+          <div style="flex:1;font-size:.95rem;color:#6b7280;">Project: Build a fetch wrapper</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:24px;padding:16px 20px;border-radius:12px;background:#2e4a8c;color:#fff;text-align:center;box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+      <div style="font-weight:700; font-size: 1.1rem;">+250 XP awaits</div>
+      <div style="font-size:.9rem;opacity:.9; margin-top: 4px;">+ "Promise Pro" badge</div>
+    </div>
+  </div>
+</section>
+<a href="ai_assistant.html" class="fab" title="Open AI assistant">🤖</a>
+</main>
+  </div>
+  
+</div>
+
+<script src="../shared/js/global.js"></script>
+<script src="../shared/js/helpers.js"></script>
+
+
+</body>
+</html>

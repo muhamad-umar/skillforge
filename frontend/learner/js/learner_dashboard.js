@@ -1,0 +1,1 @@
+// Dashboard interactions handled by global.js
