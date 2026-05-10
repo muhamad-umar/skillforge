@@ -141,25 +141,27 @@ window.addEventListener('load', () => animatePageExtras());
     if (!main || !app) return;
 
     // Fade-out current content
-    main.style.transition = 'opacity 0.18s ease, transform 0.18s ease';
-    main.style.opacity = '0';
-    main.style.transform = 'translateY(8px)';
+    main.classList.add('content-loading');
 
     try {
       const res = await fetch(href);
       const html = await res.text();
       const parser = new DOMParser();
       const doc = parser.parseFromString(html, 'text/html');
-
+      
       const newMain = doc.querySelector('main.content');
       const newApp = doc.querySelector('.app');
       const newRight = doc.querySelector('.right-panel');
       const newTitle = doc.querySelector('title')?.textContent;
 
       if (newMain) {
-        // 1. Sync CSS links
+        // Wait for fade-out to be noticeable
+        await new Promise(r => setTimeout(r, 150));
+
+        // 1. Sync CSS links (and wait for them to load to avoid FOUC)
         const currentLinks = Array.from(document.querySelectorAll('link[rel="stylesheet"]')).map(l => l.getAttribute('href'));
         const newLinks = Array.from(doc.querySelectorAll('link[rel="stylesheet"]'));
+        const loadPromises = [];
 
         newLinks.forEach(link => {
           const href = link.getAttribute('href');
@@ -167,9 +169,16 @@ window.addEventListener('load', () => animatePageExtras());
             const l = document.createElement('link');
             l.rel = 'stylesheet';
             l.href = href;
+            loadPromises.push(new Promise((resolve) => {
+              l.onload = resolve;
+              l.onerror = resolve; // Continue even if one fails
+            }));
             document.head.appendChild(l);
           }
         });
+
+        // Wait for all new styles to be ready
+        if (loadPromises.length > 0) await Promise.all(loadPromises);
 
         // 2. Sync App Class
         if (newApp) app.className = newApp.className;
@@ -225,11 +234,16 @@ window.addEventListener('load', () => animatePageExtras());
           animatePageExtras(activeRight);
         }
 
-        // Fade-in new content
+        // 6. Fade-in new content
         requestAnimationFrame(() => {
-          main.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
-          main.style.opacity = '1';
-          main.style.transform = 'translateY(0)';
+          main.classList.remove('content-loading');
+          
+          // 7. Apply staggered entrance to sections/cards AFTER showing the main container
+          const elements = main.querySelectorAll('section, .card, .hero-card, article, .quest');
+          elements.forEach((el, i) => {
+            el.classList.add('fade-up-stagger');
+            el.style.animationDelay = (i * 0.05) + 's';
+          });
         });
 
         // Scroll content area to top
