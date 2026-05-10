@@ -33,7 +33,7 @@ fetch('../../backend/users.json')
       { role: 'learner', email: 'umar@gmail.com', password: 'password123', dashboardUrl: '../learner/learner_dashboard.html' },
       { role: 'learner', email: 'zainab@gmail.com', password: 'password123', dashboardUrl: '../learner/learner_dashboard.html' },
       { role: 'instructor', email: 'instructor@gmail.com', password: 'password123', dashboardUrl: '../instructor/instructor_dashboard.html' },
-      { role: 'admin', email: 'admin@skillforge.dev', password: 'password123', dashboardUrl: '../admin/admin_dashboard.html' }
+      { role: 'admin', email: 'admin@gmail.com', password: 'password123', dashboardUrl: '../admin/admin_dashboard.html' }
     ];
   });
 

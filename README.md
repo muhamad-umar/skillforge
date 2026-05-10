@@ -29,6 +29,6 @@ You can use the following test credentials to log in (roles are automatically ha
 
 - **Learners**: `umar@gmail.com` or `zainab@gmail.com` / `password123`
 - **Instructor**: `instructor@gmail.com` / `password123`
-- **Admin**: `admin@skillforge.dev` / `password123`
+- **Admin**: `admin@gmail.com` / `password123`
 
 *(Note: These are also stored in `backend/users.json` for reference.)*

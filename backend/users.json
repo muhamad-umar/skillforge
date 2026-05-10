@@ -27,7 +27,7 @@
     "id": 4,
     "role": "admin",
     "name": "System Admin",
-    "email": "admin@skillforge.dev",
+    "email": "admin@gmail.com",
     "password": "password123",
     "dashboardUrl": "../admin/admin_dashboard.html"
   }
