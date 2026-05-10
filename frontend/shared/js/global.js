@@ -107,11 +107,34 @@ function animatePageExtras(root) {
       const v = target * (1 - Math.pow(1 - p, 3));
       el.textContent = (target % 1 === 0 ? Math.floor(v) : v.toFixed(1)).toLocaleString() + suffix;
       if (p < 1) requestAnimationFrame(tick);
-    }
+}
     requestAnimationFrame(tick);
   });
 }
 window.addEventListener('load', () => animatePageExtras());
+
+// ─── Responsive Layout Adjustments ───────────────────────────────────────
+function manageRightPanel() {
+  const rightPanel = document.querySelector('.right-panel');
+  const heroCard = document.querySelector('.hero-card');
+  const app = document.querySelector('.app');
+  
+  if (!rightPanel || !app) return;
+  
+  if (window.innerWidth <= 1280) {
+    if (heroCard && rightPanel.parentElement !== heroCard.parentElement) {
+      heroCard.after(rightPanel);
+      rightPanel.classList.add('mobile-right-panel');
+    }
+  } else {
+    if (rightPanel.parentElement !== app) {
+      app.appendChild(rightPanel);
+      rightPanel.classList.remove('mobile-right-panel');
+    }
+  }
+}
+window.addEventListener('resize', manageRightPanel);
+window.addEventListener('load', manageRightPanel);
 
 // ─── SPA Router ──────────────────────────────────────────────────────────
 (function () {
@@ -228,6 +251,10 @@ window.addEventListener('load', () => animatePageExtras());
         animatePageExtras(main);
         injectUserData(main);
         syncFAB();
+        
+        // Re-manage right panel layout after page load
+        manageRightPanel();
+        
         const activeRight = document.querySelector('.right-panel');
         if (activeRight && activeRight.style.display !== 'none') {
           injectUserData(activeRight);
