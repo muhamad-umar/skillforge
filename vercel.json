@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/frontend/landing/index.html",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/landing",
+      "destination": "/frontend/landing/index.html"
+    },
+    {
+      "source": "/login",
+      "destination": "/frontend/auth/login.html"
+    },
+    {
+      "source": "/signup",
+      "destination": "/frontend/auth/signup.html"
+    }
+  ]
+}
